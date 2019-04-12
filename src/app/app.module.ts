@@ -8,6 +8,7 @@ import { PagesComponent } from './pages/pages.component';
 
 // Modules
 import { SharedModule } from './shared/shared.module';
+import { ServiceModule } from './services/service.module';
 
 
 
@@ -21,6 +22,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
