@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 // Pages routes
 import { PagesRoutingModule } from './pages-routing.module';
 
+
+import { SharedModule } from '../shared/shared.module';
+
+
 // Components
 import { LinksListComponent } from './links/links-list/links-list.component';
-//import { PagesComponent } from './pages.component';
-
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { LinksListComponent } from './links/links-list/links-list.component';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
   ],
   exports: [
     //PagesComponent,
