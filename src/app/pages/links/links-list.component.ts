@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksListComponent implements OnInit {
 
+  links: any = [];
+
   constructor() { }
 
   ngOnInit() {
   }
+  
 
 }

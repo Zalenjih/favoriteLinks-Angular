@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LinksListComponent } from './links/links-list.component';
+import { LinksFromComponent } from './links/links-from.component';
 
 // Pages
-import { LinksListComponent } from './links/links-list/links-list.component';
 
 const routes: Routes = [
     { path: 'inicio', component: LinksListComponent },
+    { path: 'nuevo', component: LinksFromComponent },
     { path: '', redirectTo: '/inicio', pathMatch: 'full'}
 ];
   
