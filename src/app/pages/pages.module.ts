@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Pages routes
 import { PagesRoutingModule } from './pages-routing.module';
@@ -25,6 +25,7 @@ import { LinksFromComponent } from './links/links-from.component';
     CommonModule,
     PagesRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     SharedModule,
   ],
   exports: [

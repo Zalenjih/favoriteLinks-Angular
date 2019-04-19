@@ -1,6 +1,5 @@
-export { LinksService } from "./links/links.service";
-
 // Services
+export { LinksService } from "./links/links.service";
 
 
 // Guards

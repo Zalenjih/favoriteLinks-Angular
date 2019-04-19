@@ -20,8 +20,8 @@ import { PagesComponent } from './pages/pages.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ServiceModule,
     SharedModule,
-    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

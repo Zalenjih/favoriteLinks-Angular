@@ -1,7 +1,10 @@
-<div class="mt-5 text-center" *ngIf="links==''">
-  <h1 >No tienes enlacees guardados</h1>
-  <a class="btn btn-outline-primary" [routerLink]="[ '/nuevo' ]">Agregar</a>
-</div>
-<div class="mt-5" *ngIf="links!=''">
+<div class="mt-5" *ngIf="links!='';else sinDatos">
   lleno
+</div>
+
+<ng-template #sinDatos>
+  <div class="mt-5 text-center">
+    <h1>No tienes enlacees guardados</h1>
+    <a class="btn btn-outline-primary" [routerLink]="[ '/nuevo' ]">Agregar</a>
   </div>
+</ng-template>

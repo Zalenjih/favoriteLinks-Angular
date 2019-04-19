@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class LinksService {
 
   constructor() { }
+
+  createLink() {
+    console.log('Creando el link');
+  }
 }
