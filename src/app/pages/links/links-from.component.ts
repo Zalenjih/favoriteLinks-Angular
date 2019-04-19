@@ -22,7 +22,11 @@ export class LinksFromComponent implements OnInit {
   }
 
   agregarLink () {
-    console.log(this.linksForm.value);
-    this._linkService.createLink();
+    /* const linkInfo = {
+      tittle: this.linksForm.value.tittle,
+      link: this.linksForm.value.link,
+      description: this.linksForm.value.description,
+    }; */
+    this._linkService.createLink(this.linksForm.value).subscribe();
   }
 }
